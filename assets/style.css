@@ -1,55 +1,58 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    /* more on this crazy alphanumerical value in a minute! */
-    color: #39a6b2;
-    font-family: Helvetica, Arial, sans-serif;
-  }
-  
-  /* apply styles to <header> */
-  header {
-    padding: 20px 35px;
-    background-color: #39a6b2;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: #fce138;
-    margin: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  header a {
-    text-decoration: none;
-    color: #fce138;
-  }
-  
-  header nav {
-    margin: 7px 0;
-  }
-  
-  header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
-  
-  header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-  }
+body {
+  color: #39a6b2;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* HEADER / NAV BAR STYLES START */
+
+header {
+  padding: 20px 35px;
+  background-color: #39a6b2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 36px;
+  color: #fce138;
+}
+
+header a {
+  text-decoration: none;
+  color: #fce138;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+}
 
 /* HEADER / NAVBAR STYLES END */
+
+
 
 /* FOOTER STYLES START */
 footer {
@@ -71,30 +74,29 @@ footer div {
   line-height: 1.5;
   text-align: right;
 }
-  
-  footer a {
-    color: #024e76;
-  }
+
+footer a {
+  color: #024e76;
+}
 /* END FOOTER STYLES */
 
 /* STYLE ALL SECTION TAGS */
-  section {
-    padding: 60px;
-  }
+section {
+  padding: 60px;
+}
 
-/* Hero Style Start */
+/* HERO STYLES START */
 .hero {
-  background-image: url('../assets/images/hero-bg.jpg');
+  background-image: url('./images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
 .hero-cta {
-  line-height: 1.2;
   width: 35%;
   text-align: right;
   margin: 3.5%;
@@ -133,7 +135,7 @@ footer div {
   font-size: 16px;
   color: #024e76;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
 }
 
 .hero-form label {
@@ -146,20 +148,19 @@ footer div {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-}
+} 
 /* HERO STYLES END */
 
 
-/* SECTION  STYLES START */
+/* SECTION TITLE STYLES START */
 .section-title {
   font-size: 48px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  display: inline-block;
   border-bottom: 3px solid;
+  color: #024e76;
+  padding-bottom: 20px;
   text-align: center;
-
+  margin: 0 auto 35px auto;
+  width: 50%;
 }
 
 .primary-border {
@@ -236,6 +237,7 @@ footer div {
   line-height: 1.5;
   color: #024e76;
 }
+
 /* WHAT YOU DO STYLES END */
 
 /* MEET THE TRAINERS START */
@@ -343,22 +345,21 @@ footer div {
   color: #fce138;
 }
 
+
 /* REACH OUT STYLES END */
 
-
 /* UTILITIES */
-  .text-left {
-    text-align: left;
-  }
-  
-  .text-right {
-    text-align: right;
-  }
+.text-left {
+  text-align: left;
+}
 
-  .flex-row {
-    display: flex;
-  }
+.text-right {
+  text-align: right;
+}
 
+.flex-row {
+  display: flex;
+}
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -394,6 +395,7 @@ footer div {
   .hero-cta {
     text-align: center;
   }
+
   .section-title {
     width: 80%;
   }
@@ -412,6 +414,7 @@ footer div {
   section {
     padding: 30px 15px;
   }
+
   .step h3 {
     flex: 1 100%;
     text-align: center;
@@ -433,7 +436,6 @@ footer div {
   .step-text {
     flex: 100%;  
   }
-
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -461,9 +463,8 @@ footer div {
   .contact-info > * {
     flex: 0 100%;
   }
+
   .contact-form {
     order: 3;
   }
 }
-
-  
